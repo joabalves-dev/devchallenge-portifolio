@@ -1,0 +1,15 @@
+.App {
+  padding-top: 70px;
+}
+
+.App .container > .grid {
+  grid-template-columns: 350px 1fr;
+  gap: 30px;
+}
+
+.App .container > .grid .left,
+.App .container > .grid .right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

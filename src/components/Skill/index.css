@@ -1,0 +1,46 @@
+#skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+@media screen and (max-width: 768px) {
+  #skills {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills-itens {
+  list-style: none;
+}
+
+.skill-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.skill-item .skill-name {
+  width: 40%;
+}
+
+.skill-item .skill-per {
+    position: relative;
+  width: 60%;
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+
+.skill-item .skill-per .skill-per-after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-left: 30px;
+    color: #fff;
+    font-size: clamp(.8rem, 0.8vw, 1.2rem);
+    border-radius: 12px;
+    background: #2F80ED;
+    display: flex;
+    align-items: center;
+}

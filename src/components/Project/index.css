@@ -1,0 +1,100 @@
+#projects{
+    display: grid;
+    gap: 30px;
+}
+
+#projects .title {
+  font-size: clamp(1rem, 1.1vw, 2rem);
+  color: #4f4f4f;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: block;
+}
+
+.filter{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.filter-item a{
+    display: inline-block;
+    margin: 10px 0;
+    text-decoration: none;
+    padding: 10px 35px;
+    font-size: clamp(.9rem, 1.2vw, 1.1rem);
+    text-decoration: none;
+    border-radius: 12px;
+    border: 1px solid #4F4F4F;
+    color: #4f4f4f;
+}
+
+.filter-item.ative a{
+    background: #2F80ED;
+    border: none;
+    color: #fff;
+}
+
+.card.project-item{
+    display: grid;
+    grid-template-columns: 322px 1fr;
+    gap: 30px;
+}
+
+.card.project-item .box-img{
+    width: 100%;
+    grid-row: span 4;
+}
+
+.card.project-item .box-img img{
+    width: 100%;
+    border-radius: 12px;
+    max-height: 267px;
+}
+
+.card.project-item .categories{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.card.project-item .category-item{
+    font-size: clamp(0.8rem, 1.1vw, 1.2rem);
+    color: #4f4f4f;
+    font-weight: 500;
+}
+
+.card.project-item .name{
+    font-size: clamp(1.2rem, 1.6vw, 2rem);
+    color: #333;
+    font-weight: 500;
+}
+
+.card.project-item .description{
+    font-size: clamp(.8rem, 1.1vw, 1.2rem);
+    color: #828282;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.card.project-item .btns{
+    display: flex;
+    gap: 15px;
+}
+
+.card.project-item .btns a{
+    padding: 13px 40px;
+    font-size: clamp(.9rem, 1.2vw, 1.1rem);
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.card.project-item .btns a:first-child{
+    background: #2F80ED;
+    color: #fff;
+}
+
+.card.project-item .btns a:last-child{
+    border: 1px solid #2F80ED;
+    color: #2F80ED;
+}
